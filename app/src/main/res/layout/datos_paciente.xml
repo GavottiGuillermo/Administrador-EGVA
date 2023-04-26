@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="703dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <TextView
+            android:id="@+id/idTxtDatosViaje"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:accessibilityLiveRegion="none"
+            android:fontFamily="sans-serif-medium"
+            android:text="Datos del Viaje"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/idNombrePaciente"
+            android:layout_width="378dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/idNombrePaciente"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/idNumeroAsociado"
+            android:layout_width="378dp"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/idNumeroAsociado"
+            android:inputType="text"
+            android:numeric="integer" />
+
+        <EditText
+            android:id="@+id/idDireccionPaciente"
+            android:layout_width="378dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/idDomicilioPaciente"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/idTelefonoPaciente"
+            android:layout_width="379dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="@string/idTelefonoPaciente"
+            android:inputType="phone"
+            android:numeric="integer" />
+
+        <EditText
+            android:id="@+id/idObservaciones"
+            android:layout_width="379dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/idObservaciones"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/idBtnFecha"
+                android:layout_width="161dp"
+                android:layout_height="53dp"
+                android:layout_gravity="left"
+                android:text="Fecha"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/idTxtVFecha"
+                android:layout_width="231dp"
+                android:layout_height="49dp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/idBtnHora"
+                android:layout_width="160dp"
+                android:layout_height="52dp"
+                android:text="Hora"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/idTxtVHora"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/idHospitalDestino"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:autoText="true"
+            android:ems="10"
+            android:hint="@string/idHospitalDestino"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/idSpChoferes"
+            android:layout_width="290dp"
+            android:layout_height="56dp"
+            android:background="#F6F4F4"
+            android:backgroundTint="#D3CFCF"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@color/black"
+            android:textAlignment="viewStart"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/idBtnAsignar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:onClick="AsignarViaje"
+            android:text="Asignar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

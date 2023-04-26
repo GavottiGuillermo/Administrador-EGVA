@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Administrador EGVA Servicios</string>
+    <string-array name="choferes">
+        <item> Luis </item>
+        <item> Carlos </item>
+        <item> Alberto </item>
+    </string-array>
+    <string-array name="vista">
+        <item> Hoy </item>
+        <item> Esta semana </item>
+    </string-array>
+    <string name="idNumeroAsociado">Número de Asociado</string>
+    <string name="idNombrePaciente">Nombre y Apellido</string>
+    <string name="idDomicilioPaciente">Domicilio</string>
+    <string name="idTelefonoPaciente">Teléfono</string>
+    <string name="idObservaciones">Observaciones</string>
+    <string name="idHospitalDestino">Hospital de Destino</string>
+
+</resources>
