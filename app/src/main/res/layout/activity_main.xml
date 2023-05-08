@@ -74,6 +74,12 @@
             android:text="Chofer         Desde          Hasta            Hora"
             android:textAlignment="viewStart" />
 
+        <TextView
+            android:id="@+id/infoCalendario"
+            android:layout_width="382dp"
+            android:layout_height="475dp"
+            android:gravity="center" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
